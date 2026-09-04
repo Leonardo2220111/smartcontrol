@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CADASTRO SMART CONTROL</title>
     <link rel="stylesheet" href="assets/css/cadastro.css">
 </head>
 <body>
 
-    <img src="assets/images/logo.png" alt="imagem-logo">
-    <h1>Cadastro</h1>
-    <form action="index.html"method="get"></form>
-        <label for="nome_completo">NOME COMPLETO</label>
-        <input type="text" name="nome_completo" id="nome_completo" placeholder="Digite seu nome completo" required><br><br>
-
-        <label for="e_mail">E-MAIL</label>
-        <input type="text" name="e_mail" id="e_mail" placeholder="Digite seu E-mail" required><br><br>
-
-        <label for="senha">SENHA</label>
-        <input type="password" name="senha" id="senha" placeholder="Digite sua Senha" minlenght="8" required><br><br>
+    <!--<img src="assets/images/download.png" alt="imagem logo">-->
+    <div class="container">
+    
         
-        <label for="termos_de_uso">ACEITO OS TERMOS DE USO</label>
-        <input type="checkbox" name="termos_de_uso" id="termos_de_uso">
+        <form action="index.html" method="get">
+            <div class="card">
+                <h1>CADASTRO</h1>
+                <div class="input-group">
+                    <label for="nome_completo">NOME COMPLETO</label>
+                    <input type="text" name= "nome_completo" id= "nome_completo" placeholder="Digite seu nome completo" required><br><br>
+                
+                    <label for="e_mail">E-MAIL</label>
+                    <input type="email" name= "e_mail" id= "e_mail" placeholder="Digite seu E-mail" required><br><br>
 
-        <button type="submit">CADASTRAR</button>
+                    <label for="senha">SENHA</label>
+                    <input type="password" name= "senha" id= "senha" placeholder="Digite sua senha" minlength="8" required><br><br>
+                </div>
+                <input type="checkbox" name="termos_de_uso" id="termos_de_uso">
+                <label for="termos_de_uso">Aceito todos os termos de uso</label>
+            
 
-    </form>  
+                <button type="submit">CADASTRAR</button>
+            </div>
+        </form>
+
+    </div>
+        
+
+    </form>
     <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1513.8828918978652!2d-43.38970355486589!3d-21.735810154338914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c137561ccdf%3A0x37fe39ecf248d0a5!2sJomar%20Auto%20Pe%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1785952460739!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></iframe>
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.102854440699!2d-43.427614924521436!3d-21.69872999581662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989f6720750ec1%3A0xd414ff506d8047b2!2sMax%20Pais%20e%20Filhos%20Atacado%20e%20Varejo%20-%20Nova%20Era!5e0!3m2!1spt-BR!2sbr!4v1785949812992!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>-->
     </footer>
+
+
+
+
         
-    <script src="assets/js/script.js"></script>    
+    <script src="assets/js/main.js"></script>  
 </body>
 </html>

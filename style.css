@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #20232b;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.login-card {
+    width: 470px;
+    height: 580px;
+
+    background-color: #9295cc;
+
+    border-radius: 22px;
+
+    padding: 65px 55px 45px 55px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* TÍTULO */
+
+.login-card h1 {
+    color: white;
+
+    text-align: center;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    margin-bottom: 48px;
+}
+
+
+/* CAMPOS */
+
+.campo {
+    margin-bottom: 38px;
+}
+
+.campo label {
+    display: block;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ÁREA DO INPUT */
+
+.input-container {
+    width: 100%;
+    height: 52px;
+
+    background-color: #ffffff;
+
+    border-radius: 11px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 14px;
+}
+
+
+/* INPUT */
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+
+    color: #555;
+
+    padding: 0 8px;
+}
+
+.input-container input::placeholder {
+    color: #777;
+}
+
+
+/* SENHA */
+
+.senha-container {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.icone {
+    font-size: 18px;
+
+    color: #777;
+}
+
+.olho {
+    font-size: 17px;
+
+    color: #777;
+
+    cursor: pointer;
+}
+
+
+/* OPÇÕES */
+
+.opcoes {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 3px;
+
+    margin-bottom: 48px;
+}
+
+
+/* LEMBRAR-ME */
+
+.lembrar {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.lembrar input {
+    width: 19px;
+    height: 19px;
+
+    cursor: pointer;
+}
+
+
+/* CRIAR CONTA */
+
+.opcoes a {
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.opcoes a:hover {
+    text-decoration: underline;
+}
+
+
+/* BOTÃO */
+
+button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    width: 225px;
+    height: 50px;
+
+    margin: 0 auto;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #ffffff;
+
+    color: #555555;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eeeeee;
+}
+
+.botao-icone {
+    font-size: 17px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 520px) {
+
+    .login-card {
+        width: 100%;
+        height: auto;
+
+        padding: 45px 30px 40px;
+    }
+
+    .login-card h1 {
+        font-size: 28px;
+
+        margin-bottom: 40px;
+    }
+
+    .campo {
+        margin-bottom: 30px;
+    }
+
+    .opcoes {
+        margin-bottom: 40px;
+    }
+
+}
